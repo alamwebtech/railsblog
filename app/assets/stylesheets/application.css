@@ -1,0 +1,165 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+*
+ *= require devise_bootstrap_views
+ *= require_tree .
+ *= require_self
+ */
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #efefef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+body {
+  padding-left: 200px;
+  text-align: center;
+  color: #800000;
+  font-size: 1.5em;
+}
+
+
+#sidebar {
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #595e66;
+  padding: 7em 0 0 0;
+  border-right: 1px solid #d6dce0;
+}
+
+.category {
+  font-weight: 700;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: #33acb7;
+}
+
+ul {
+  list-style: none;
+  text-align: right;
+  padding-right: 3em;
+}
+
+#sidebar li {
+  padding: .5em 0;
+}
+
+#page_wrapper {
+  padding: 3em;
+}
+
+h1 {
+  text-align: center;
+  color: #33acb7;
+  padding-top:6%;
+}
+
+h2 {
+  padding-top: 3%;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+p.date{
+  text-align: center;
+}
+#create{
+  text-align: center;
+  padding-top:0;
+}
+p#nameLabel {
+  width: 70em;
+  text-align: center;
+}
+
+input#comment_name {
+  width: 30em;
+  text-align: center;
+  height: 30px;
+}
+
+p#commentLabel {
+  width: 70em;
+  text-align: center;
+}
+
+textarea#comment_body {
+  width: 50em;
+  height: 60px;
+}
+
+p.titileLabel {
+  text-align: center;
+  color: #33acb7;
+}
+
+p.bodyLabel {
+  text-align: center;
+  color: #33acb7;
+}
+
+p.titleSubmit {
+  text-align: center;
+  color: #33acb7;
+}
+
+input {
+  color: black;
+  text-align: center;
+}
+
+p#delete {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.75;
+}
+
+a {
+  color: #33acb7;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#errors ul li {
+  color: red;
+  text-align: center;
+}
+
+#errors {
+  margin: 0 auto;
+  text-align: center;
+}
+
+input#post_title {
+  width: 30em;
+  text-align: center;
+  height: 30px;
+}
+
+textarea#post_body {
+  width: 50em;
+  height: 80px;
+}

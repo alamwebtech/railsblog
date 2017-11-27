@@ -1,0 +1,32 @@
+<%= form_for @post do |f| %>
+<hr>
+<% if @post.errors.any? %>
+<div id="errors">
+  <h2><%= pluralize(@post.errors.count, "ERRORS") %></h2>
+  <ul>
+    <% @post.errors.full_messages.each do |msg| %>
+<li><%= msg %> </li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<p class="titileLabel">
+<%= f.label :avatar %> <br>
+<%= f.file_field :avatar %>
+</p>
+
+<p class="titileLabel">
+<%= f.label :title %> <br>
+<%= f.text_field :title %>
+</p>
+
+<p class="bodyLabel">
+  <%= f.label :body %> <br>
+  <%= f.text_area :body %>
+</P>
+
+<p class="titleSubmit">
+  <%= f.submit %>
+</p>
+<% end %>
