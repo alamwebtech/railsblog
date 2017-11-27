@@ -1,11 +1,12 @@
 <% @post.each do |post|%>
-<div class="title_wrapper">
-  <h2 class="title"><%= link_to post.title, post %> </h2>
-  <br>
-  <%= image_tag post.avatar.url(:medium) %>
+  <div class="title_wrapper">
+    <h2 class="title"><%= link_to post.title, post %>
+    </h2>
+    <br>
+    <%= image_tag post.avatar.url(:medium) %>
 
-</div>
+  </div>
 <% end %>
 <p id="delete">
-<%= link_to "LOGOUT", destroy_user_session_path, method: :delete %>
+  <%= link_to "LOGOUT", destroy_user_session_path, method: :delete %>
 </p>

@@ -15,14 +15,14 @@
  *= require_self
  */
 
- html, body {
-   font-family: 'Raleway', sans-serif;
-   background-color: #efefef;
- }
+html, body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #efefef;
+}
 
- h1, h2, h3, h4, h5, h6 {
-   font-weight: 500;
- }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
 
 body {
   padding-left: 200px;
@@ -30,7 +30,6 @@ body {
   color: #800000;
   font-size: 1.5em;
 }
-
 
 #sidebar {
   width: 200px;
@@ -67,7 +66,7 @@ ul {
 h1 {
   text-align: center;
   color: #33acb7;
-  padding-top:6%;
+  padding-top: 6%;
 }
 
 h2 {
@@ -78,13 +77,16 @@ h2 {
 h3 {
   text-align: center;
 }
-p.date{
+
+p.date {
   text-align: center;
 }
-#create{
+
+#create {
   text-align: center;
-  padding-top:0;
+  padding-top: 0;
 }
+
 p#nameLabel {
   width: 70em;
   text-align: center;
